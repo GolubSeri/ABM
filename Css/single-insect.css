@@ -1,0 +1,12 @@
+.single-insect .content-cols_2 .content-cols__item .content-cols__description {
+  max-width: 527px;
+}
+.single-insect .content-cols_3 .content-cols__row {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.single-insect .content-cols_3 .content-cols__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.3333%;
+          flex: 0 1 33.3333%;
+}

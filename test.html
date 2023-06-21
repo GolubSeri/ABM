@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Вирусы - ABM</title>
+	<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="stylesheet" href="Css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+<header>
+	<div class="header__container">
+		<div class="header__body">
+			<div class="header__logo scroll-button">
+				<a href="index.html">
+					<img src="Img/Header/Logo.svg" alt="">
+				</a>
+			</div>
+			<div class="header__menu menu">
+				<!-- Заготовка для бургера -->
+				<div class="menu__icon icon-menu">
+					<span></span>
+				</div>
+				<nav class="menu__body">
+					<ul class="menu__list">
+						<li><a class="menu__link menu__link_contacts" href="" >Контакты</a></li>
+						<li><a class="menu__link menu__link_order popup-link" href="#order-form" >Заказ штаммов</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		
+<div class="order-form popup-form popup" id="order-form">
+	<div class="order-form__body popup-form__body popup__body">
+		<div class="order-form__content popup__content popup-form__content">
+			<h3 class="order-form__title popup-form__title">
+				Выберите штаммы для заказа
+				<span class="close-popup"></span>
+			</h3>
+			<form action="" class="order-form__form popup-form__form">
+				<div class="order-form__inputs popup-form__block">
+					<div class="order-form__input-wrapper popup-form__input-wrapper">
+						<label>Бактерии</label>
+						<input placeholder="Введите название штамма" class="order-form__input popup-form__input input" type="text">
+					</div>
+					<div class="order-form__input-wrapper popup-form__input-wrapper">
+						<label>Вирусы</label>
+						<input placeholder="Введите название штамма" class="order-form__input popup-form__input input" type="text">
+					</div>
+					<div class="order-form__input-wrapper popup-form__input-wrapper">
+						<label>Грибы</label>
+						<input placeholder="Введите название штамма" class="order-form__input popup-form__input input" type="text">
+					</div>
+					<div class="order-form__input-wrapper popup-form__input-wrapper">
+						<label>Этномофаги</label>
+						<input placeholder="Введите название штамма" class="order-form__input popup-form__input input" type="text">
+					</div>
+				</div>
+				<div class="order-form__user-data popup-form__block">
+					<div class="order-form__input-wrapper popup-form__input-wrapper">
+						<input placeholder="Организация" class="order-form__user-input input" type="text">
+					</div>
+					<div class="order-form__input-wrapper popup-form__input-wrapper">
+						<input placeholder="Должность" class="order-form__user-input input" type="text">
+					</div>
+					<div class="order-form__input-wrapper popup-form__input-wrapper">
+						<input placeholder="Номер телефона" class="order-form__user-input input" type="tel">
+					</div>
+					<div class="order-form__input-wrapper popup-form__input-wrapper">
+						<input placeholder="E-mail" class="order-form__user-input input" type="email">
+					</div>
+				</div>
+				<button class="order-form__button popup-form__button">Заказать</button>
+			</form>
+		</div>
+	</div>
+</div>	</div>
+</header>		<main>
+			<section class="main-screen">
+<aside class="slidebar">
+	<div class="slidebar__body">
+		<nav class="slidebar__menu">
+			<ul class="slidebar__list">
+				<li>
+					<a href="index.html" class="slidebar__link slidebar__link_home _active">
+						Главная
+					</a>
+				</li>
+				<li>
+					<a href="bacteria.html" class="slidebar__link slidebar__link_catalog">
+						Каталог
+					</a>
+				</li>
+				<li>
+					<a href="" class="slidebar__link slidebar__link_services">
+						Услуги
+					</a>
+				</li>
+				<li>
+					<a href="" class="slidebar__link slidebar__link_publications">
+						Публикации
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="slidebar__contacts">
+			<a href="#feedback-form" class="slidebar__feedback popup-link">Обратная связь</a>
+			<a href="tel:+79000000000" class="slidebar__tel">8 (900) 000-00-00</a>
+			<a href="mailto:example@gmail.com" class="slidebar__mail">example@gmail.com</a>
+		</div>
+	</div>
+<div class="feedback-form popup-form popup" id="feedback-form">
+	<div class="popup-form__body popup__body">
+		<div class="popup__content popup-form__content">
+			<h3 class="popup-form__title">
+				Обратная связь
+				<span class="close-popup"></span>
+			</h3>
+			<form action="" class="popup-form__form">
+				<div class="popup-form__block">
+					<div class="popup-form__input-wrapper">
+						<input placeholder="ФИО" class="popup-form__input input" type="text">
+					</div>
+					<div class="popup-form__input-wrapper">
+						<input placeholder="Организация" class="popup-form__input input" type="text">
+					</div>
+					<div class="popup-form__input-wrapper">
+						<input placeholder="Номер телефона" class="popup-form__input input" type="tel">
+					</div>
+					<div class="popup-form__input-wrapper">
+						<input placeholder="E-mail" class="popup-form__input input" type="email">
+					</div>
+				</div>
+				<div class="popup-form__textarea-wrapper">
+					<label>Опишите ваш вопрос</label>
+					<textarea class="popup-form__textarea" placeholder="Введите текст..."></textarea>
+				</div>
+				<button class="popup-form__button">Отправить</button>
+			</form>
+		</div>
+	</div>
+</div></aside>				<div class="main-wrapper">
+<div class="feedback-form popup-form popup" id="feedback-form">
+	<div class="popup-form__body popup__body">
+		<div class="popup__content popup-form__content">
+			<h3 class="popup-form__title">
+				Обратная связь
+				<span class="close-popup"></span>
+			</h3>
+			<form action="" class="popup-form__form">
+				<div class="popup-form__block">
+					<div class="popup-form__input-wrapper">
+						<input placeholder="ФИО" class="popup-form__input input" type="text">
+					</div>
+					<div class="popup-form__input-wrapper">
+						<input placeholder="Организация" class="popup-form__input input" type="text">
+					</div>
+					<div class="popup-form__input-wrapper">
+						<input placeholder="Номер телефона" class="popup-form__input input" type="tel">
+					</div>
+					<div class="popup-form__input-wrapper">
+						<input placeholder="E-mail" class="popup-form__input input" type="email">
+					</div>
+				</div>
+				<div class="popup-form__textarea-wrapper">
+					<label>Опишите ваш вопрос</label>
+					<textarea class="popup-form__textarea" placeholder="Введите текст..."></textarea>
+				</div>
+				<button class="popup-form__button">Отправить</button>
+			</form>
+		</div>
+	</div>
+</div>				</div>
+			</section>
+		</main>
+	</div>
+<script src="Js/main.js"></script></body>
+
+</html>

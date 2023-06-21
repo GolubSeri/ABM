@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>BZR GV 1 - ABM</title>
+	<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<link rel="stylesheet" href="Css/choices.min.css">
+<link rel="stylesheet" href="Css/style.css"></head>
+
+<body>
+	<div class="wrapper">
+<header>
+	<div class="header__container">
+		<div class="header__body">
+			<div class="header__logo scroll-button">
+				<a href="index.html">
+					<img src="Img/Header/Logo.svg" alt="">
+				</a>
+			</div>
+			<div class="header__menu menu">
+				<div class="menu__icon icon-menu">
+					<span></span>
+				</div>
+				<nav class="menu__body">
+					<ul class="menu__list">
+						<li><a class="menu__link menu__link_contacts popup-link" href="#contacts-form">Контакты</a></li>
+						<li><a class="menu__link menu__link_order btn_green popup-link" href="#order-all-form">Заказ штаммов</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+<div class="popup contacts-popup" id="contacts-form">
+	<div class="popup__body">
+		<div class="popup__content popup-form__content">
+			<h3 class="popup-form__title popup__title">
+				<span class="popup__title-text">Наши контакты</span>
+				<span class="close-popup"></span>
+			</h3>
+			<div class="contacts-popup__map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2840.7625012529115!2d40.10258676247144!3d44.601882820952426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f73275b060d6c7%3A0xbcc42391d78ad891!2z0J_QuNCy0L7QstCw0YDQtdC90L3Ri9C5INC30LDQstC-0LQg0JzQsNC50LrQvtC_0YHQutC40Lk!5e0!3m2!1sru!2sru!4v1687344307143!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+			<div class="contacts-popup__desc">
+				<div class="contacts-popup__item">
+					<h4 class="contacts-popup__desc-title">
+						Адрес
+					</h4>
+					<p class="contacts-popup__desc-text">
+						Россия, Республика Адыгея, г. Майкоп, ул. Гоголя 2
+					</p>
+				</div>
+				<div class="contacts-popup__item">
+					<h4 class="contacts-popup__desc-title">
+						Телефон
+					</h4>
+					<a href="tel:+79000000000" class="contacts-popup__desc-text">
+						8 (900) 000-00-00
+					</a>
+				</div>
+				<div class="contacts-popup__item">
+					<h4 class="contacts-popup__desc-title">
+						Почта
+					</h4>
+					<a href="mailto:example@gmail.com" class="contacts-popup__desc-text">
+						example@gmail.com
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div><div class="order-form popup-form popup" id="order-all-form">
+	<div class="order-form__body popup-form__body popup__body">
+		<div class="order-form__content popup__content popup-form__content">
+			<h3 class="order-form__title popup-form__title popup__title">
+				<span class="popup-form__title-text">Выберите штаммы для заказа</span>
+				<span class="popup-form__title-text_complete">Ваш заказ принят</span>
+				<span class="close-popup"></span>
+			</h3>
+			<p class="popup-form__desc">
+				Наши сотрудники свяжутся с вами в ближайшее время.
+			</p>
+			<button class="popup-form__btn popup-form__button close-popup">ОК</button>
+
+			<form action="" class="order-form__form order-form__form_all popup-form__form">
+				<p class="popup-form__warning">
+					Ничего не выбрано!
+				</p>
+				<div class="order-form__inputs popup-form__block">
+					<div class="order-form__select-wrapper popup-form__select-wrapper">
+						<label>Бактерии</label>
+						<select data-placeholder="Введите название штамма" name="bacteria" class="multi-select" multiple>
+							<option>BZR 16</option>
+							<option>BZR 26</option>
+							<option>BZR 36</option>
+							<option>BZR 46</option>
+							<option>BZR 56</option>
+							<option>BZR 66</option>
+							<option>BZR 76</option>
+							<option>BZR 86</option>
+							<option>BZR 96</option>
+						</select>
+					</div>
+					<div class="order-form__select-wrapper popup-form__select-wrapper">
+						<label>Вирусы</label>
+						<select data-placeholder="Введите видовую принадлежность" name="virus" class="multi-select" multiple>
+							<option>BZR 16</option>
+							<option>BZR 26</option>
+							<option>BZR 36</option>
+							<option>BZR 46</option>
+							<option>BZR 56</option>
+							<option>BZR 66</option>
+							<option>BZR 76</option>
+							<option>BZR 86</option>
+							<option>BZR 96</option>
+						</select>
+					</div>
+					<div class="order-form__select-wrapper popup-form__select-wrapper">
+						<label>Грибы</label>
+						<select data-placeholder="Введите название штамма" name="mushroom" class="multi-select" multiple>
+							<option>BZR 16</option>
+							<option>BZR 26</option>
+							<option>BZR 36</option>
+							<option>BZR 46</option>
+							<option>BZR 56</option>
+							<option>BZR 66</option>
+							<option>BZR 76</option>
+							<option>BZR 86</option>
+							<option>BZR 96</option>
+						</select>
+					</div>
+					<div class="order-form__select-wrapper popup-form__select-wrapper">
+						<label>Этномофаги</label>
+						<select data-placeholder="Введите название штамма" name="insect" class="multi-select" multiple>
+							<option>BZR 16</option>
+							<option>BZR 26</option>
+							<option>BZR 36</option>
+							<option>BZR 46</option>
+							<option>BZR 56</option>
+							<option>BZR 66</option>
+							<option>BZR 76</option>
+							<option>BZR 86</option>
+							<option>BZR 96</option>
+						</select>
+					</div>
+				</div>
+				<div class="order-form__user-data popup-form__block">
+					<div class="order-form__input-wrapper popup-form__input-wrapper">
+						<input placeholder="Организация" class="order-form__user-input input" type="text">
+					</div>
+					<div class="order-form__input-wrapper popup-form__input-wrapper">
+						<input placeholder="Должность" class="order-form__user-input input" type="text">
+					</div>
+					<div class="order-form__input-wrapper popup-form__input-wrapper">
+						<input placeholder="Номер телефона" class="order-form__user-input input" type="tel">
+					</div>
+					<div class="order-form__input-wrapper popup-form__input-wrapper">
+						<input placeholder="E-mail" class="order-form__user-input input" type="email">
+					</div>
+				</div>
+				<button class="order-form__button popup-form__button">Заказать</button>
+			</form>
+		</div>
+	</div>
+</div>	</div>
+</header>		<main>
+			<section class="main-screen">
+<aside class="slidebar">
+	<div class="slidebar__body">
+		<div class="slidebar__content">
+			<nav class="slidebar__menu">
+				<ul class="slidebar__list">
+					<li>
+						<a href="index.html" class="slidebar__link slidebar__link_home _active">
+							Главная
+						</a>
+					</li>
+					<li>
+						<a href="bacteria.html" class="slidebar__link slidebar__link_catalog">
+							Каталог
+						</a>
+					</li>
+					<li>
+						<a href="publications.html" class="slidebar__link slidebar__link_publications">
+							Публикации
+						</a>
+					</li>
+				</ul>
+				<div class="slidebar__footer">
+					<a href="#order-all-form" class="slidebar__order-btn btn_green popup-link _slidebar-popup-btn">Заказ штаммов</a>
+					<div class="slidebar__contacts">
+						<a href="#feedback-form" class="slidebar__feedback popup-link _slidebar-popup-btn">Обратная связь</a>
+						<a href="tel:+79000000000" class="slidebar__tel">8 (900) 000-00-00</a>
+						<a href="mailto:example@gmail.com" class="slidebar__mail">example@gmail.com</a>
+						<a class="slidebar__contacts-popup popup-link _slidebar-popup-btn" href="#contacts-form">Контакты</a>
+					</div>
+				</div>
+			</nav>
+
+		</div>
+	</div>
+</aside>
+<div class="feedback-form popup-form popup" id="feedback-form">
+	<div class="popup-form__body popup__body">
+		<div class="popup__content popup-form__content">
+			<h3 class="popup-form__title popup__title">
+				<span class="popup-form__title-text popup__title-text">Обратная связь</span>
+				<span class="popup-form__title-text_complete">Ваше сообщение принято</span>
+				<span class="close-popup"></span>
+			</h3>
+			<p class="popup-form__desc">
+				Наши сотрудники свяжутся с вами в ближайшее время.
+			</p>
+			<button class="popup-form__btn popup-form__button close-popup">ОК</button>
+			<form action="" class="feedback-form__form popup-form__form">
+				<div class="popup-form__block">
+					<div class="popup-form__input-wrapper">
+						<input placeholder="ФИО" class="popup-form__input feedback-form__input input" type="text">
+					</div>
+					<div class="popup-form__input-wrapper">
+						<input placeholder="Организация" class="popup-form__input feedback-form__input input" type="text">
+					</div>
+					<div class="popup-form__input-wrapper">
+						<input placeholder="Номер телефона" class="popup-form__input feedback-form__input input" type="tel">
+					</div>
+					<div class="popup-form__input-wrapper">
+						<input placeholder="E-mail" class="popup-form__input feedback-form__input input" type="email">
+					</div>
+				</div>
+				<div class="popup-form__textarea-wrapper">
+					<label>Опишите ваш вопрос</label>
+					<textarea class="popup-form__textarea feedback-form__textarea" placeholder="Введите текст..."></textarea>
+				</div>
+				<button class="popup-form__button">Отправить</button>
+			</form>
+		</div>
+	</div>
+</div>				<div class="single-virus main-wrapper">
+					<div class="single-virus__body main-body">
+						<nav class="main-body__breadcrumbs breadcrumbs">
+							<ul class="breadcrumbs__list">
+								<li><a class="breadcrumbs__link" href="bacteria.html">Каталог</a></li>
+								<li><a class="breadcrumbs__link" href="virus.html">Вирусы</a></li>
+								<li><span class="breadcrumbs__last">BZR GV 1</span></li>
+							</ul>
+						</nav>
+
+						<div class="single-virus__order single__order">
+							<h1 class="single-virus__title single__order-title">
+								BZR GV 1
+							</h1>
+							<a href="" class="single-virus__btn single__order-btn btn_green">Заказать</a>
+						</div>
+
+						<div class="single-virus__content-cols content-cols content-cols_3">
+							<div class="content-cols__item">
+								<h3 class="content-cols__title">
+									Вид:
+								</h3>
+								<p class="content-cols__description">
+									Bacillus velezensis
+								</p>
+							</div>
+							<div class="content-cols__item">
+								<h3 class="content-cols__title">
+									Место выделения:
+								</h3>
+								<p class="content-cols__description">
+									РФ, Краснодарский край, Крыловской район 
+								</p>
+							</div>
+							<div class="content-cols__item">
+								<h3 class="content-cols__title">
+									АВТОРЫ:
+								</h3>
+								<p class="content-cols__description">
+									Асатурова А.М., Дубяга В.М.
+								</p>
+							</div>
+							<div class="content-cols__item">
+								<h3 class="content-cols__title">
+									Источник выделения:
+								</h3>
+								<p class="content-cols__description">
+									Яблонная плодожорка Cidia Ponomella, L, 1758
+								</p>
+							</div>
+							<div class="content-cols__item">
+								<h3 class="content-cols__title">
+									Дата выделения:
+								</h3>
+								<p class="content-cols__description">
+									02.11.2010
+								</p>
+							</div>
+						</div>
+
+						<div class="single-virus__content-cols content-cols content-cols_2 content-cols_no-margin">
+							<div class="content-cols__item">
+								<h3 class="content-cols__title">
+									Патенты:
+								</h3>
+								<p class="content-cols__description">
+									Патент на изобретение № 2745156 от 22.03.2021 "Штамм бактерий Bacillus amyloliquefaciens, обладающий нематициднойактивностью против галловых нематод"
+								</p>
+							</div>
+							<div class="content-cols__item">
+								<h3 class="content-cols__title">
+									Токсиколого-гигиеническая оценка:
+								</h3>
+								<p class="content-cols__description">
+									Не является вирулентным, не способен к диссеминации, не токсичный, не токсиногенный, не является патогенным к теплокровным животным
+								</p>
+							</div>
+							<div class="content-cols__item">
+								<h3 class="content-cols__title">
+									Прочие виды интеллектуальной собственности:
+								</h3>
+								<p class="content-cols__description">
+									База данных “Штаммы бактерий-антагонистов” из Биоресурсной коллекции этномоакарифагов и микроорганизмов, обладающие фунгицидной активностью, свидетельство о регистрации №2002622986
+								</p>
+							</div>
+							<div class="content-cols__item">
+								<h3 class="content-cols__title">
+									полевые испытания:
+								</h3>
+								<p class="content-cols__description">
+									Описаны
+								</p>
+							</div>
+						</div>
+
+						<div class="single-virus__specifications specifications specifications_cols">
+							<div class="specifications__body">
+								<div class="specifications__item">
+									<h3 class="specifications__title">
+										инсектицидная АКТИВНОСТЬ
+									</h3>
+									<p class="specifications__explanation">
+										(целевой объект, степень активности)
+									</p>
+									<div class="specifications__content">
+										<div class="specifications__content-row">
+											<div class="specifications__content-item">
+												<p class="specifications__description">
+													Galleria mellonella L., 1758
+												</p>
+												<p class="specifications__value">
+													<span>средняя</span>(44-60%)
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="single-virus__publications publications">
+							<h4 class="publications__title">
+								ПУБЛИКАЦИИ:
+							</h4>
+							<div class="publications__body">
+								<a href="" target="_blank" class="publications_link">https://www.elibrary.ru/item.asp?id=28909009164132</a>
+								<a href="" target="_blank" class="publications_link">https://www.elibrary.ru/item.asp?id=28909009164132</a>
+								<a href="" target="_blank" class="publications_link">https://www.elibrary.ru/item.asp?id=28909009164132</a>
+								<a href="" target="_blank" class="publications_link">https://www.elibrary.ru/item.asp?id=28909009164132</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+<script src="Js/choices.min.js"></script>
+<script src="Js/main.js"></script></body>
+
+</html>
