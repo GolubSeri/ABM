@@ -115,12 +115,14 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   background-color: #F2FFF3;
-  touch-action: none;
-  -ms-touch-action: none;
 }
 
 body._slidebar-lock, body._popup-lock {
   overflow: hidden;
+  position: relative;
+  z-index: 0;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
 }
 
 #hideAll {
