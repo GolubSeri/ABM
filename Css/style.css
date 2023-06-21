@@ -119,6 +119,8 @@ body {
 
 body._slidebar-lock, body._popup-lock {
   overflow: hidden;
+  touch-action: none;
+  -ms-touch-action: none;
 }
 
 #hideAll {
@@ -504,22 +506,25 @@ body._slidebar-lock, body._popup-lock {
   color: #36852B;
   padding-top: 6px;
   padding-bottom: 6px;
-  padding-right: 8px !important;
+  padding-right: 27px !important;
+  position: relative;
 }
 .choices__list--multiple .choices__item--selectable .choices__button, .choices__list--multiple .choices__item.is-highlighted .choices__button {
   border: 0;
   width: 12px;
   height: 12px;
   padding: 0;
-  top: 2px;
-  right: 2px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 12px;
   background: transparent;
-  position: relative;
+  position: absolute;
 }
 .choices__list--multiple .choices__item--selectable .choices__button::after, .choices__list--multiple .choices__item--selectable .choices__button::before, .choices__list--multiple .choices__item.is-highlighted .choices__button::after, .choices__list--multiple .choices__item.is-highlighted .choices__button::before {
   content: "";
   position: absolute;
-  top: 4px;
+  top: 5px;
   left: 0;
   width: 10px;
   height: 1.5px;
@@ -632,6 +637,7 @@ body._slidebar-lock, body._popup-lock {
 
 .choices[data-type=select-multiple] .choices__inner {
   padding: 12px 16px !important;
+  padding-right: 30px !important;
 }
 .choices[data-type=select-multiple] .choices__input {
   display: block;
@@ -821,36 +827,38 @@ body._slidebar-lock, body._popup-lock {
 .table-body td a:hover {
   color: #36852B;
 }
-.table-body td a span:hover::after {
-  content: "Показать информацию о штамме";
-  white-space: nowrap;
-  z-index: 1;
-  position: absolute;
-  top: -40px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  padding: 8px 16px;
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 300;
-  color: #2D2D2E;
-  background-color: #fff;
-  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-}
-.table-body td a span:hover::before {
-  content: "";
-  position: absolute;
-  z-index: 2;
-  top: -8px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  border: 5px solid transparent;
-  border-top: 5px solid #fff;
-  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+@media (min-width: 993px) {
+  .table-body td a span:hover::after {
+    content: "Показать информацию о штамме";
+    white-space: nowrap;
+    z-index: 1;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    padding: 8px 16px;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 300;
+    color: #2D2D2E;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  .table-body td a span:hover::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: -8px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    border: 5px solid transparent;
+    border-top: 5px solid #fff;
+    -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  }
 }
 .table-body td a::before {
   content: "";
