@@ -121,8 +121,6 @@ body._slidebar-lock, body._popup-lock {
   overflow: hidden;
   position: relative;
   z-index: 0;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
 }
 
 #hideAll {
@@ -1812,7 +1810,7 @@ body._slidebar-lock, body._popup-lock {
   content: "";
   position: absolute;
   top: 0;
-  left: -28.34px;
+  left: -25px;
   width: 17px;
   height: 17px;
   background-image: url("../Img/Header/Image_01.svg");
